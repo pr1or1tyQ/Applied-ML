@@ -1,0 +1,10 @@
+\subsection{Network Intrusion Detection - Model WriteUp}
+Dataset: 
+- http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
+- https://www.tensorflow.org/datasets/catalog/kddcup99
+
+This model focused on detecting network intrusions. The training data used was the KDDCUP99 data-set which is admittedly a bit outdated yet is a good foundation set of data to develop a working model based on various network features. The data-set was created by MIT Lincoln Labs and was the result of a nine week TCP dump from the local-area-network (LAN) that was operated as it were an operations Air Force environment with attacks against the network executed throughout the collection. The attack categories seen were a form of denial-of-service, unauthorized access from a remote machine, unauthorized access to local superuser privileges, and probing attempts. Further information about the dataset can be found in the links above. 
+
+The model produced and trained on this data was utilized Sequential keras model. Within the model creation the first task was cleaning and preparing the data for input into the model. This included removing outlier elements within the dataset and on-hot encoding categorical elements. Once data pre-processing was complete the model was constructed with 4 layers compiled using the categorical corssentopy loss function and the adam optimizer. The model performed with 99.92 Percent accuracy. This performance was further evaluated to ensure the model was not simply 'guessing'. Validations of the model included the generation of an RoC curve, accuracy plots, and model tests on validation data. 
+
+Future work: The existing model is intended to serve as a base model that can be applied to more current network traffic data and further optimized for real time intrusion detection and analysis. Steps to pursue include applying the model to other datasets and adjusting has needed. Further the model should undergo further evaluation to ensure the 99 percent accuracy achieved is consistent and not a representation of overfitting the model to the original dataset. 

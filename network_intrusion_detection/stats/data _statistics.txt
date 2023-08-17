@@ -1,0 +1,32 @@
+SIFKDD_99_Dataset (SIFKDD99):
+-----------------------------
+Total Normal Count: 972781      Percentage of total: 0.19854748087963478
+Total Attack Count: 3926707     Percentage of total: 0.8014525191203652
+Total Count: 4899488            Percentage of total: 1.0
+
+{'normal': 972781, 'buffer_overflow': 30, 'loadmodule': 9, 'perl': 3, 'neptune': 1072017, 'smurf': 2807886, 'guess_passwd': 53, 'pod': 264, 'teardrop': 979, 'portsweep': 10413, 'ipsweep': 12481, 'land': 21, 'ftp_write': 8, 'back': 2203, 'imap': 1069, 'satan': 15892, 'phf': 4, 'nmap': 2316, 'multihop': 7, 'warezmaster': 20, 'warezclient': 1020, 'spy': 2, 'rootkit': 10}
+
+Train Dataset:
+----------------
+train_normal: 1696      Percentage: 0.000432791731228169
+train_attack: 3917048   Percentage: 0.9995672082687719
+train_total: 3918744
+
+Verified With Train Labels:
+---------------------
+train_normal: 1723      Percentage: 0.00043968169393050424
+train_attack: 3917021   Percentage: 0.9995603183060695
+train_total: 3918744
+
+Test Dataset:
+----------------
+test_normal: 385        Precentage: 0.00039298305783689875
+test_attack: 979301     Percentage: 0.9996070169421631
+test_total: 979686
+
+Verified with Test Labels:
+--------------------------
+test_normal: 480        Precentage: 0.0004899529032771724
+test_attack: 979206     Percentage: 0.9995100470967229
+test_total: 979686
+
